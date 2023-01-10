@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		C0CB631D296CEF78000CF5BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CB631C296CEF78000CF5BC /* AppDelegate.swift */; };
 		C0CB631F296CEF78000CF5BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CB631E296CEF78000CF5BC /* SceneDelegate.swift */; };
-		C0CB6321296CEF78000CF5BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CB6320296CEF78000CF5BC /* ViewController.swift */; };
-		C0CB6324296CEF78000CF5BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0CB6322296CEF78000CF5BC /* Main.storyboard */; };
+		C0CB6321296CEF78000CF5BC /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CB6320296CEF78000CF5BC /* ChatViewController.swift */; };
 		C0CB6326296CEF7C000CF5BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0CB6325296CEF7C000CF5BC /* Assets.xcassets */; };
 		C0CB6329296CEF7C000CF5BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0CB6327296CEF7C000CF5BC /* LaunchScreen.storyboard */; };
+		C0CB6332296CF0C9000CF5BC /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CB6331296CF0C9000CF5BC /* NetworkService.swift */; };
+		C0CB6335296CF131000CF5BC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C0CB6334296CF131000CF5BC /* Alamofire */; };
+		C0CB6337296CF2E4000CF5BC /* DevProps.plist in Resources */ = {isa = PBXBuildFile; fileRef = C0CB6336296CF2E4000CF5BC /* DevProps.plist */; };
+		C0CB6339296CF361000CF5BC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CB6338296CF361000CF5BC /* Router.swift */; };
+		C0CB633C296CF8DA000CF5BC /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CB633B296CF8DA000CF5BC /* Conversation.swift */; };
+		C0CB633F296D051A000CF5BC /* AlamofireNetworkActivityLogger in Frameworks */ = {isa = PBXBuildFile; productRef = C0CB633E296D051A000CF5BC /* AlamofireNetworkActivityLogger */; };
+		C0CB6341296D0DF2000CF5BC /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CB6340296D0DF1000CF5BC /* AppConstants.swift */; };
+		C0CB6345296D12F7000CF5BC /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CB6344296D12F7000CF5BC /* ChatView.swift */; };
+		C0CB6347296D1302000CF5BC /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CB6346296D1301000CF5BC /* ChatViewModel.swift */; };
+		C0CB6349296D1362000CF5BC /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CB6348296D1362000CF5BC /* ViewCodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C0CB6319296CEF78000CF5BC /* iBrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0CB631C296CEF78000CF5BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0CB631E296CEF78000CF5BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C0CB6320296CEF78000CF5BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C0CB6323296CEF78000CF5BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0CB6320296CEF78000CF5BC /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		C0CB6325296CEF7C000CF5BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0CB6328296CEF7C000CF5BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0CB632A296CEF7C000CF5BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0CB6331296CF0C9000CF5BC /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		C0CB6336296CF2E4000CF5BC /* DevProps.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DevProps.plist; sourceTree = "<group>"; };
+		C0CB6338296CF361000CF5BC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		C0CB633B296CF8DA000CF5BC /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		C0CB6340296D0DF1000CF5BC /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		C0CB6344296D12F7000CF5BC /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		C0CB6346296D1301000CF5BC /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		C0CB6348296D1362000CF5BC /* ViewCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0CB6335296CF131000CF5BC /* Alamofire in Frameworks */,
+				C0CB633F296D051A000CF5BC /* AlamofireNetworkActivityLogger in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +74,54 @@
 		C0CB631B296CEF78000CF5BC /* iBrain */ = {
 			isa = PBXGroup;
 			children = (
+				C0CB6342296D122A000CF5BC /* Presentation */,
+				C0CB633A296CF8CD000CF5BC /* Model */,
+				C0CB6330296CF06E000CF5BC /* Infra */,
 				C0CB631C296CEF78000CF5BC /* AppDelegate.swift */,
 				C0CB631E296CEF78000CF5BC /* SceneDelegate.swift */,
-				C0CB6320296CEF78000CF5BC /* ViewController.swift */,
-				C0CB6322296CEF78000CF5BC /* Main.storyboard */,
 				C0CB6325296CEF7C000CF5BC /* Assets.xcassets */,
 				C0CB6327296CEF7C000CF5BC /* LaunchScreen.storyboard */,
 				C0CB632A296CEF7C000CF5BC /* Info.plist */,
+				C0CB6336296CF2E4000CF5BC /* DevProps.plist */,
 			);
 			path = iBrain;
+			sourceTree = "<group>";
+		};
+		C0CB6330296CF06E000CF5BC /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				C0CB6331296CF0C9000CF5BC /* NetworkService.swift */,
+				C0CB6338296CF361000CF5BC /* Router.swift */,
+				C0CB6340296D0DF1000CF5BC /* AppConstants.swift */,
+				C0CB6348296D1362000CF5BC /* ViewCodable.swift */,
+			);
+			path = Infra;
+			sourceTree = "<group>";
+		};
+		C0CB633A296CF8CD000CF5BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C0CB633B296CF8DA000CF5BC /* Conversation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C0CB6342296D122A000CF5BC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C0CB6343296D1236000CF5BC /* Chat */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C0CB6343296D1236000CF5BC /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				C0CB6320296CEF78000CF5BC /* ChatViewController.swift */,
+				C0CB6344296D12F7000CF5BC /* ChatView.swift */,
+				C0CB6346296D1301000CF5BC /* ChatViewModel.swift */,
+			);
+			path = Chat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +140,10 @@
 			dependencies = (
 			);
 			name = iBrain;
+			packageProductDependencies = (
+				C0CB6334296CF131000CF5BC /* Alamofire */,
+				C0CB633E296D051A000CF5BC /* AlamofireNetworkActivityLogger */,
+			);
 			productName = iBrain;
 			productReference = C0CB6319296CEF78000CF5BC /* iBrain.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +172,10 @@
 				Base,
 			);
 			mainGroup = C0CB6310296CEF78000CF5BC;
+			packageReferences = (
+				C0CB6333296CF131000CF5BC /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C0CB633D296D051A000CF5BC /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityLogger" */,
+			);
 			productRefGroup = C0CB631A296CEF78000CF5BC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +192,7 @@
 			files = (
 				C0CB6329296CEF7C000CF5BC /* LaunchScreen.storyboard in Resources */,
 				C0CB6326296CEF7C000CF5BC /* Assets.xcassets in Resources */,
-				C0CB6324296CEF78000CF5BC /* Main.storyboard in Resources */,
+				C0CB6337296CF2E4000CF5BC /* DevProps.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +203,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0CB6321296CEF78000CF5BC /* ViewController.swift in Sources */,
+				C0CB633C296CF8DA000CF5BC /* Conversation.swift in Sources */,
+				C0CB6321296CEF78000CF5BC /* ChatViewController.swift in Sources */,
 				C0CB631D296CEF78000CF5BC /* AppDelegate.swift in Sources */,
+				C0CB6339296CF361000CF5BC /* Router.swift in Sources */,
+				C0CB6345296D12F7000CF5BC /* ChatView.swift in Sources */,
+				C0CB6349296D1362000CF5BC /* ViewCodable.swift in Sources */,
+				C0CB6341296D0DF2000CF5BC /* AppConstants.swift in Sources */,
+				C0CB6332296CF0C9000CF5BC /* NetworkService.swift in Sources */,
+				C0CB6347296D1302000CF5BC /* ChatViewModel.swift in Sources */,
 				C0CB631F296CEF78000CF5BC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +219,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C0CB6322296CEF78000CF5BC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C0CB6323296CEF78000CF5BC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C0CB6327296CEF7C000CF5BC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +356,6 @@
 				INFOPLIST_FILE = iBrain/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +383,6 @@
 				INFOPLIST_FILE = iBrain/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +420,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C0CB6333296CF131000CF5BC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = exactVersion;
+				version = 5.6.4;
+			};
+		};
+		C0CB633D296D051A000CF5BC /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityLogger" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/konkab/AlamofireNetworkActivityLogger";
+			requirement = {
+				kind = exactVersion;
+				version = 3.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C0CB6334296CF131000CF5BC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0CB6333296CF131000CF5BC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		C0CB633E296D051A000CF5BC /* AlamofireNetworkActivityLogger */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0CB633D296D051A000CF5BC /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityLogger" */;
+			productName = AlamofireNetworkActivityLogger;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C0CB6311296CEF78000CF5BC /* Project object */;
 }
