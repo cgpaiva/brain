@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C06589DC296E3CF300F3FF23 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C06589DB296E3CF300F3FF23 /* SnapKit */; };
+		C06589DE296E547000F3FF23 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06589DD296E547000F3FF23 /* Message.swift */; };
+		C06589E0296E54B600F3FF23 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06589DF296E54B600F3FF23 /* ChatTableViewCell.swift */; };
+		C06589E32972465C00F3FF23 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06589E22972465C00F3FF23 /* UIView+Extension.swift */; };
 		C0CB631D296CEF78000CF5BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CB631C296CEF78000CF5BC /* AppDelegate.swift */; };
 		C0CB631F296CEF78000CF5BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CB631E296CEF78000CF5BC /* SceneDelegate.swift */; };
 		C0CB6321296CEF78000CF5BC /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CB6320296CEF78000CF5BC /* ChatViewController.swift */; };
@@ -25,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C06589DD296E547000F3FF23 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		C06589DF296E54B600F3FF23 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		C06589E22972465C00F3FF23 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		C0CB6319296CEF78000CF5BC /* iBrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0CB631C296CEF78000CF5BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0CB631E296CEF78000CF5BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C06589DC296E3CF300F3FF23 /* SnapKit in Frameworks */,
 				C0CB6335296CF131000CF5BC /* Alamofire in Frameworks */,
 				C0CB633F296D051A000CF5BC /* AlamofireNetworkActivityLogger in Frameworks */,
 			);
@@ -55,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C06589E12972464700F3FF23 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C06589E22972465C00F3FF23 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C0CB6310296CEF78000CF5BC = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +90,7 @@
 		C0CB631B296CEF78000CF5BC /* iBrain */ = {
 			isa = PBXGroup;
 			children = (
+				C06589E12972464700F3FF23 /* Extensions */,
 				C0CB6342296D122A000CF5BC /* Presentation */,
 				C0CB633A296CF8CD000CF5BC /* Model */,
 				C0CB6330296CF06E000CF5BC /* Infra */,
@@ -102,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				C0CB633B296CF8DA000CF5BC /* Conversation.swift */,
+				C06589DD296E547000F3FF23 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -120,6 +138,7 @@
 				C0CB6320296CEF78000CF5BC /* ChatViewController.swift */,
 				C0CB6344296D12F7000CF5BC /* ChatView.swift */,
 				C0CB6346296D1301000CF5BC /* ChatViewModel.swift */,
+				C06589DF296E54B600F3FF23 /* ChatTableViewCell.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -143,6 +162,7 @@
 			packageProductDependencies = (
 				C0CB6334296CF131000CF5BC /* Alamofire */,
 				C0CB633E296D051A000CF5BC /* AlamofireNetworkActivityLogger */,
+				C06589DB296E3CF300F3FF23 /* SnapKit */,
 			);
 			productName = iBrain;
 			productReference = C0CB6319296CEF78000CF5BC /* iBrain.app */;
@@ -175,6 +195,7 @@
 			packageReferences = (
 				C0CB6333296CF131000CF5BC /* XCRemoteSwiftPackageReference "Alamofire" */,
 				C0CB633D296D051A000CF5BC /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityLogger" */,
+				C06589DA296E3CF300F3FF23 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = C0CB631A296CEF78000CF5BC /* Products */;
 			projectDirPath = "";
@@ -208,9 +229,12 @@
 				C0CB631D296CEF78000CF5BC /* AppDelegate.swift in Sources */,
 				C0CB6339296CF361000CF5BC /* Router.swift in Sources */,
 				C0CB6345296D12F7000CF5BC /* ChatView.swift in Sources */,
+				C06589E32972465C00F3FF23 /* UIView+Extension.swift in Sources */,
 				C0CB6349296D1362000CF5BC /* ViewCodable.swift in Sources */,
+				C06589DE296E547000F3FF23 /* Message.swift in Sources */,
 				C0CB6341296D0DF2000CF5BC /* AppConstants.swift in Sources */,
 				C0CB6332296CF0C9000CF5BC /* NetworkService.swift in Sources */,
+				C06589E0296E54B600F3FF23 /* ChatTableViewCell.swift in Sources */,
 				C0CB6347296D1302000CF5BC /* ChatViewModel.swift in Sources */,
 				C0CB631F296CEF78000CF5BC /* SceneDelegate.swift in Sources */,
 			);
@@ -422,6 +446,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C06589DA296E3CF300F3FF23 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = exactVersion;
+				version = 5.6.0;
+			};
+		};
 		C0CB6333296CF131000CF5BC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -441,6 +473,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C06589DB296E3CF300F3FF23 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C06589DA296E3CF300F3FF23 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		C0CB6334296CF131000CF5BC /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C0CB6333296CF131000CF5BC /* XCRemoteSwiftPackageReference "Alamofire" */;

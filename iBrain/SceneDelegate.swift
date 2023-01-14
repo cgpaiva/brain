@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window.windowScene = windowScene
         
         let navigationController = UINavigationController()
-        let viewController = ChatViewController(service: NetworkService())
+        let viewController = ChatViewController(service: NetworkService(), viewModel: ChatViewModel())
         
         navigationController.pushViewController(viewController, animated: true)
         

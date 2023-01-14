@@ -10,9 +10,12 @@ import UIKit
 class ChatViewController: UIViewController {
     
     let service: NetworkServiceProtocol
+    let viewModel: ChatViewModelProtocol
+    var theView: ChatView?
     
-    init(service: NetworkServiceProtocol) {
+    init(service: NetworkServiceProtocol, viewModel: ChatViewModelProtocol) {
         self.service = service
+        self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -23,8 +26,20 @@ class ChatViewController: UIViewController {
     override func loadView() {
         let view = ChatView()
         view.delegate = self
-        view.viewModel = ChatViewModel()
+        view.viewModel = viewModel
+        view.messageTableView.dataSource = self
+        self.theView = view
         self.view = view
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.registerForKeyboardNotifications()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.view.unregisterForKeyboardNotifications()
     }
     
 }
@@ -38,10 +53,35 @@ extension ChatViewController: ChatViewDelegate {
                 switch result {
                 case .success(let success):
                     print(success)
+                    let cleanedResponse = success.choices[0].text.trimmingCharacters(in: .whitespacesAndNewlines)
+                    self.viewModel.addNewConversation(conversation: Message(messageType: .receiver, message: cleanedResponse))
+                    self.theView?.messageTableView.reloadData()
                 case .failure(let error):
                     print(error)
                 }
             }
+    }
+    
+}
+
+extension ChatViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.messageList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = theView?.messageTableView.dequeueReusableCell(withIdentifier: "message", for: indexPath) as? ChatTableViewCell
+        cell?.message = viewModel.messageList[indexPath.row].message
+        cell?.backgroundColor = .clear
+        
+        cell?.messageType = viewModel.messageList[indexPath.row].messageType
+        
+        cell?.setupView()
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
     }
     
 }

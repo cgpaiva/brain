@@ -23,7 +23,7 @@ enum Router {
         switch self {
         case .completions(let message):
             return [
-                "model": "text-davinci-002",
+                "model": "text-davinci-003",
                 "prompt": message,
                 "max_tokens": 4000,
                 "temperature": 0.5
@@ -42,7 +42,7 @@ enum Router {
         switch self {
         case .completions:
             return [
-                "Authorization": "Bearer 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",
+                "Authorization": "Bearer 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",
             ]
         }
     }
